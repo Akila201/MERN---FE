@@ -68,3 +68,8 @@ In the project directory, you can run:
 *   `npm test` / `yarn test`: Launches the test runner.
 *   `npm run build` / `yarn build`: Builds the app for production.
 *   `npm run eject` / `yarn eject`: Ejects from Create React App configuration (use with caution).
+
+## Credential For Login
+
+"email": "bornov201@gmail.com"
+"password": "bornovEngg_BE"
