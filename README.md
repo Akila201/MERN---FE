@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Simple React Blog Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the frontend for a simple blogging application built with React. It allows authenticated users to manage their own blog posts.
+
+## Features
+
+*   **User Authentication:** Login page using email and password (JWT handled via backend).
+*   **Post Management:**
+    *   Create new blog posts.
+    *   View a list of your own posts.
+    *   Edit existing posts.
+    *   Delete your posts.
+*   **Routing:** Uses React Router for page navigation.
+*   **API Interaction:** Uses Axios to communicate with a separate backend API.
+*   **State Management:** Uses React Hooks (useState, useEffect, useContext) and Context API for managing authentication state (token).
+*   **UI:** Basic responsive UI styled with vanilla CSS. Includes loading spinners and error messages.
+
+## Technologies Used
+
+*   React (Functional Components & Hooks)
+*   React Router DOM
+*   Axios
+*   Vanilla CSS
+
+## Prerequisites
+
+*   **Node.js:** Version 18.x or later recommended (check with `node -v`).
+*   **npm** (comes with Node.js) or **yarn** (optional, install with `npm install --global yarn`).
+*   The corresponding [Backend API](<link-to-your-backend-repo-if-available>) must be running separately.
+
+## Setup and Running
+
+1.  **Clone the repository (optional, if you don't have the code locally):**
+    ```bash
+    git clone <your-repo-url>
+    cd Blog-FE
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Configure Environment Variable:**
+    Create a `.env` file in the root directory (`/Users/akila/Documents/Akila/Bornov/Blog-FE/.env`) and add the URL of your running backend API:
+    ```env
+    REACT_APP_API_URL=http://localhost:5001/api
+    ```
+    *(Replace `http://localhost:5001/api` if your backend runs on a different URL)*
+
+4.  **Start the development server:**
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
+    This will usually open the app in your default browser at `http://localhost:3000`.
+
+5.  **Ensure Backend is Running:** Make sure your separate backend server (Node.js/Express) is running, as this frontend relies on it for all data and authentication.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   `npm start` / `yarn start`: Runs the app in development mode.
+*   `npm test` / `yarn test`: Launches the test runner.
+*   `npm run build` / `yarn build`: Builds the app for production.
+*   `npm run eject` / `yarn eject`: Ejects from Create React App configuration (use with caution).

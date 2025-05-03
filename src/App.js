@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import { AuthProvider } from './context/AuthContext';
+import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <div className="App">
-      Let's build a MERN app!
-    </div>
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
   );
 }
 
