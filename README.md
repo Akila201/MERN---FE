@@ -33,7 +33,7 @@ This project is the frontend for a simple blogging application built with React.
 1.  **Clone the repository (optional, if you don't have the code locally):**
     ```bash
     git clone <your-repo-url>
-    cd Blog-FE
+    cd MERN---FE
     ```
 
 2.  **Install dependencies:**
